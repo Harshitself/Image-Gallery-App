@@ -39,27 +39,9 @@ function PhotoList({ searchQuery,openModal }) {
           <Photo
             key={photo.id}
             photo={photo}
-            openModal={openModal} // You can change this to the appropriate action
+            openModal={openModal} 
           />
         ))}
-        {/* {photos.map((photo) => (
-          <div key={photo.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <img
-              src={photo.urls.regular}
-              alt={photo.description}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{photo.user.name}</h3>
-              <button
-                onClick={() => openModal(photo)}
-                className="bg-blue-500 text-white rounded px-2 py-1"
-              >
-                View
-              </button>
-            </div>
-          </div>
-        ))} */}
       </div>
       <div className="mt-4 flex justify-center">
         <button
